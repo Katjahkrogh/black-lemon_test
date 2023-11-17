@@ -1,3 +1,9 @@
+/* Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap");
+
+/* Lato */
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -6,72 +12,61 @@
 
 /* Farver defineres her */
 :root {
-  --purelyBlue: #2b73ca;
+  --textColor: #4d4d4d;
+  --bgButton: #bfabab;
+  --bgInfo: #f6f6f5;
+  --bgPrimary: #ffffff;
+  --border: #9f938b;
 }
 
-a {
-  text-decoration: none;
-}
-
+/* Generelt layotu for fonte */
 h1 {
-  font-family: "Open Sans";
-  font-style: normal;
+  font-family: "Poppins", sans-serif;
   font-weight: 400;
-  font-size: 30px;
-  line-height: 41px;
+  font-size: 28px;
   text-transform: uppercase;
-  color: var(--purelyWhite);
+  color: var(--textColor);
 }
 
 h2 {
-  font-family: "Open Sans";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 30px;
-  line-height: 41px;
-  letter-spacing: 0.04em;
-  color: var(--darkBrown);
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  color: var(--textColor);
 }
 
 h3 {
-  font-family: "Open Sans";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 25px;
-  line-height: 34px;
-  color: var(--darkBrown);
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  color: var(--textColor);
 }
 
 h4 {
-  font-family: "Open Sans";
-  font-style: normal;
+  font-family: "Lato", sans-serif;
   font-weight: 400;
-  font-size: 20px;
-  line-height: 27px;
-  color: var(--darkBrown);
+  font-size: 18px;
+  color: var(--textColor);
 }
 
 h5 {
-  font-family: "Open Sans";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 20px;
-  line-height: 27px;
-  color: var(--darkBrown);
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  color: var(--textColor);
 }
 
 p {
-  font-family: "Open Sans";
-  font-style: normal;
+  font-family: "Poppins", sans-serif;
   font-weight: 300;
-  font-size: 20px;
-  line-height: 27px;
-  color: var(--darkBrown);
+  font-size: 14px;
+  letter-spacing: 0.1em;
+  color: var(--textColor);
 }
 
 a {
-  font-family: "Open Sans";
-  font-style: normal;
+  font-family: "Poppins", sans-serif;
   font-weight: 400;
+  font-size: 14px;
+  color: var(--textColor);
+  text-decoration: none;
 }
-

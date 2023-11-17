@@ -1,0 +1,149 @@
+---
+---
+
+<div class="info-box">
+  <div class="info" id="ingredienser">
+    <h3>Ingredients</h3>
+    <div class="kryds">
+      <div class="vandret"></div>
+      <div class="lodret" id="lodret-ingredienser"></div>
+    </div>
+  </div>
+
+  <div class="open-menu hide" id="ingredienser-open">
+    <p>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi incidunt
+      fugiat minus optio non adipisci error, magnam delectus cumque voluptas
+      vero nisi repudiandae laboriosam numquam exercitationem illum eos mollitia
+      fugit?
+    </p>
+  </div>
+  <hr />
+</div>
+
+<div class="info-box">
+  <div class="info" id="ingredienser2">
+    <h3>Ingredients</h3>
+    <div class="kryds">
+      <div class="vandret"></div>
+      <div class="lodret" id="lodret-ingredienser2"></div>
+    </div>
+  </div>
+
+  <div class="open-menu hide" id="ingredienser-open2">
+    <p>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi incidunt
+      fugiat minus optio non adipisci error, magnam delectus cumque voluptas
+      vero nisi repudiandae laboriosam numquam exercitationem illum eos mollitia
+      fugit?
+    </p>
+  </div>
+  <hr />
+</div>
+
+<div class="info-box">
+  <div class="info" id="ingredienser3">
+    <h3>Ingredients</h3>
+    <div class="kryds">
+      <div class="vandret"></div>
+      <div class="lodret" id="lodret-ingredienser3"></div>
+    </div>
+  </div>
+
+  <div class="open-menu hide" id="ingredienser-open3">
+    <p>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi incidunt
+      fugiat minus optio non adipisci error, magnam delectus cumque voluptas
+      vero nisi repudiandae laboriosam numquam exercitationem illum eos mollitia
+      fugit?
+    </p>
+  </div>
+</div>
+
+<style>
+  .info-box {
+    background-color: var(--bgPrimary);
+    margin: 15px 0;
+    width: 100vw;
+  }
+  .info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    cursor: pointer;
+  }
+
+  .hide {
+    display: none;
+  }
+
+  .kryds {
+    width: 18px;
+    position: relative;
+  }
+
+  .vandret,
+  .lodret {
+    width: 100%;
+    height: 2px;
+    background-color: var(--textColor);
+    position: absolute;
+  }
+
+  .lodret {
+    rotate: 90deg;
+    transition: transform 0.3s;
+  }
+
+  p {
+    margin: 0 15px 20px 15px;
+  }
+  hr {
+    border: 0.5px solid var(--border);
+    margin: 15px;
+  }
+
+  /* media querys */
+  @media (min-width: 785px) {
+    .info-box {
+      margin-left: 30px;
+      width: 50vw;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    .info-box {
+      margin-left: 60px;
+    }
+  }
+</style>
+
+<script>
+  const ingredienserKnap = document.getElementById("ingredienser");
+  const openIngredisenser = document.getElementById("ingredienser-open");
+  const lodretIngredienser = document.getElementById("lodret-ingredienser");
+
+  ingredienserKnap.addEventListener("click", () => {
+    openIngredisenser.classList.toggle("hide");
+    lodretIngredienser.classList.toggle("hide");
+  });
+
+  const ingredienserKnap2 = document.getElementById("ingredienser2");
+  const openIngredisenser2 = document.getElementById("ingredienser-open2");
+  const lodretIngredienser2 = document.getElementById("lodret-ingredienser2");
+
+  ingredienserKnap2.addEventListener("click", () => {
+    openIngredisenser2.classList.toggle("hide");
+    lodretIngredienser2.classList.toggle("hide");
+  });
+
+  const ingredienserKnap3 = document.getElementById("ingredienser3");
+  const openIngredisenser3 = document.getElementById("ingredienser-open3");
+  const lodretIngredienser3 = document.getElementById("lodret-ingredienser3");
+
+  ingredienserKnap3.addEventListener("click", () => {
+    openIngredisenser3.classList.toggle("hide");
+    lodretIngredienser3.classList.toggle("hide");
+  });
+</script>
