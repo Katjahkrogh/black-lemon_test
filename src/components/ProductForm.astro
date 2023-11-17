@@ -1,0 +1,79 @@
+---
+---
+
+<form>
+  <section id="radioBtns">
+    <div class="radio">
+      <input type="radio" id="buyOnce" name="purchaseType" value="buyOnce" />
+      <label for="buyOnce">Buy Once | $38</label>
+    </div>
+    <div class="radio">
+      <input type="radio" id="buyOnce" name="purchaseType" value="buyOnce" />
+      <label for="buyOnce">Subscribe (SAVE 20%) | $30</label>
+    </div>
+  </section>
+  <section class="add">
+    <button>ADD TO CART</button>
+  </section>
+</form>
+
+<style>
+  form {
+    margin: 30px 0px 30px 0px;
+  }
+
+  #radioBtns {
+    margin: 30px 0px 30px 0px;
+  }
+
+  .radio {
+    display: flex;
+    gap: 1em;
+    justify-content: baseline;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  /* Styling af radio btn´s */
+  input[type="radio"]:after {
+    width: 20px;
+    height: 20px;
+    border-radius: 15px;
+    top: -6px;
+    left: -2px;
+    position: relative;
+    background-color: var(--bgInfo);
+    content: "";
+    display: inline-block;
+    border: 2px solid var(--border);
+  }
+
+  input[type="radio"]:checked:after {
+    width: 20px;
+    height: 20px;
+    border-radius: 15px;
+    top: -6px;
+    left: -2px;
+    position: relative;
+    background-color: var(--border);
+    content: "";
+    display: inline-block;
+    border: 2px solid var(--border);
+  }
+
+  /* tilføj til kurv */
+  .add {
+    display: flex;
+    width: 100%;
+  }
+  button {
+    padding: 10px;
+    border: none;
+    background-color: var(--bgButton);
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: var(--textColor);
+    width: 65%;
+  }
+</style>

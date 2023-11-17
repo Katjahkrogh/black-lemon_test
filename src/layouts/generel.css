@@ -49,8 +49,15 @@ h4 {
   color: var(--textColor);
 }
 
-h5 {
+label {
   font-family: "Lato", sans-serif;
+  font-size: 16px;
+  color: var(--textColor);
+}
+
+label {
+  font-family: "poppins", sans-serif;
+  font-weight: 300;
   font-size: 16px;
   color: var(--textColor);
 }
@@ -69,4 +76,8 @@ a {
   font-size: 14px;
   color: var(--textColor);
   text-decoration: none;
+}
+
+hr {
+  border: 0.5px solid var(--border);
 }

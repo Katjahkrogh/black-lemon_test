@@ -100,26 +100,27 @@
     margin: 0 15px 20px 15px;
   }
   hr {
-    border: 0.5px solid var(--border);
     margin: 15px;
   }
 
   /* media querys */
   @media (min-width: 785px) {
     .info-box {
-      margin-left: 30px;
-      width: 50vw;
+      margin-left: 80px;
+      width: 60vw;
     }
   }
 
   @media (min-width: 1200px) {
     .info-box {
-      margin-left: 60px;
+      margin-left: 100px;
+      width: 50vw;
     }
   }
 </style>
 
 <script>
+  //Første felt
   const ingredienserKnap = document.getElementById("ingredienser");
   const openIngredisenser = document.getElementById("ingredienser-open");
   const lodretIngredienser = document.getElementById("lodret-ingredienser");
@@ -129,6 +130,7 @@
     lodretIngredienser.classList.toggle("hide");
   });
 
+  //Andet felt
   const ingredienserKnap2 = document.getElementById("ingredienser2");
   const openIngredisenser2 = document.getElementById("ingredienser-open2");
   const lodretIngredienser2 = document.getElementById("lodret-ingredienser2");
@@ -138,6 +140,7 @@
     lodretIngredienser2.classList.toggle("hide");
   });
 
+  //Tredje felt
   const ingredienserKnap3 = document.getElementById("ingredienser3");
   const openIngredisenser3 = document.getElementById("ingredienser-open3");
   const lodretIngredienser3 = document.getElementById("lodret-ingredienser3");
