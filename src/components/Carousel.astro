@@ -1,0 +1,53 @@
+---
+import ProductCard from "./ProductCard.astro";
+---
+
+<article>
+  <h1>YOU MAY ALSO LIKE</h1>
+  <section id="slide">
+    <ProductCard />
+    <ProductCard />
+    <ProductCard />
+  </section>
+</article>
+
+<style>
+  article h1 {
+    font-family: "Lato", sans-serif;
+    text-align: center;
+    padding: 50px;
+  }
+
+  #slide {
+    display: flex;
+    gap: 1.5em;
+    overflow-y: scroll;
+    margin: 0px 0px 30px 15px;
+    scroll-behavior: smooth;
+  }
+
+  /* media querys */
+  @media (min-width: 785px) {
+    article h1 {
+      padding: 80px;
+    }
+
+    #slide {
+      display: flex;
+      gap: 3em;
+    }
+  }
+
+  @media (min-width: 1000px) {
+    article h1 {
+      padding: 100px;
+    }
+
+    #slide {
+      display: flex;
+      gap: 5em;
+      justify-content: center;
+      margin-bottom: 100px;
+    }
+  }
+</style>

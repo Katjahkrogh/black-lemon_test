@@ -1,0 +1,44 @@
+---
+---
+
+<nav>
+  <img src="../../images/logo.svg" alt="logo" />
+  <div id="logo-group">
+    <img src="../../images/søg.svg" alt="søg" />
+    <img src="../../images/login.svg" alt="login" />
+    <img src="../../images/kurv.svg" alt="kurv" id="kurv" />
+  </div>
+</nav>
+
+<style>
+  nav {
+    height: 50px;
+    margin: 5px 15px 5px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  #logo-group {
+    display: flex;
+    gap: 1em;
+  }
+
+  #counter {
+    background-color: var(--textColor);
+    border-radius: 90px;
+    padding: 8px;
+    color: white;
+    z-index: 999;
+    font-size: 10px;
+  }
+
+  /* media querys */
+  @media (min-width: 785px) {
+    nav {
+      margin: 10px 30px 10px 30px;
+    }
+  }
+</style>
+
+<script></script>

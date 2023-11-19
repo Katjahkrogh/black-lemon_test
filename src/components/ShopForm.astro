@@ -4,16 +4,28 @@
 <form>
   <section id="radioBtns">
     <div class="radio">
-      <input type="radio" id="buyOnce" name="purchaseType" value="buyOnce" />
+      <input type="radio" id="buyOnce" name="buy" />
       <label for="buyOnce">Buy Once | $38</label>
     </div>
     <div class="radio">
-      <input type="radio" id="buyOnce" name="purchaseType" value="buyOnce" />
-      <label for="buyOnce">Subscribe (SAVE 20%) | $30</label>
+      <input type="radio" id="subscribe" name="buy" />
+      <label for="subscribe">Subscribe (SAVE 20%) | $30</label>
     </div>
   </section>
   <section class="add">
-    <button>ADD TO CART</button>
+    <select id="number">
+      <option value="null">1</option>
+      <option value="null">2</option>
+      <option value="null">3</option>
+      <option value="null">4</option>
+      <option value="null">5</option>
+      <option value="null">6</option>
+      <option value="null">7</option>
+      <option value="null">8</option>
+      <option value="null">9</option>
+      <option value="null">10</option>
+    </select>
+    <button id="addBtn">ADD TO CART</button>
   </section>
 </form>
 
@@ -65,8 +77,15 @@
   .add {
     display: flex;
     width: 100%;
+    gap: 1em;
   }
-  button {
+
+  #number {
+    width: 30%;
+    border: 1.5px solid var(--textColor);
+  }
+
+  #addBtn {
     padding: 10px;
     border: none;
     background-color: var(--bgButton);
@@ -75,5 +94,8 @@
     font-size: 18px;
     color: var(--textColor);
     width: 65%;
+    cursor: pointer;
   }
 </style>
+
+<script></script>

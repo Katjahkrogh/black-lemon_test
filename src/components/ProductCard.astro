@@ -1,42 +1,47 @@
 ---
-import Organic from "./Organic.astro";
-import ProductForm from "./ProductForm.astro";
 ---
 
-<section class="product-card">
-  <h1>RESTORATIVE HAIR MASK</h1>
-  <p>NUTURISHMENT IN A BOTTLE</p>
-  <hr />
-  <p>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-    tempor incididunt ut labore et dolore magna aliqua. Tempor commodo
-    ullamcorper a lacus vestibulum. Luctus accumsan tortor posuere ac ut.
-  </p>
-  <div class="organic-group">
-    <Organic />
-    <Organic />
-    <Organic />
-    <Organic />
-  </div>
-  <hr />
-  <ProductForm />
-</section>
+<div>
+  <img src="../../images/handcreme.jpg" alt="Hand creme" />
+  <h5>HAND POMADE / POMMADE MAINS</h5>
+  <h5 id="thin">NOURISHMENT FOR YOUR HANDS</h5>
+  <h4>159,00 KR</h4>
+</div>
 
 <style>
-  .product-card {
-    padding: 15px;
-    background-color: var(--bgInfo);
+  img {
+    max-width: 280px;
   }
 
-  p {
-    margin: 20px 0px 20px 0px;
+  h5 {
+    margin-top: 5px;
+  }
+  #thin {
+    font-weight: 300;
   }
 
-  .organic-group {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 0.5em;
-    row-gap: 2em;
-    margin: 20px 0px 20px 0px;
+  h4 {
+    margin-top: 20px;
+  }
+
+  /* media querys */
+  @media (min-width: 785px) {
+    article h1 {
+      padding: 80px;
+    }
+
+    img {
+      max-width: 320px;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    article h1 {
+      padding: 100px;
+    }
+
+    img {
+      max-width: 500px;
+    }
   }
 </style>

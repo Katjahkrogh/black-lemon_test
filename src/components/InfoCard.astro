@@ -1,0 +1,55 @@
+---
+import Organic from "./Organic.astro";
+import ShopForm from "./ShopForm.astro";
+---
+
+<section class="info-card">
+  <h1>RESTORATIVE HAIR MASK</h1>
+  <p>NUTURISHMENT IN A BOTTLE</p>
+  <hr />
+  <p>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua. Tempor commodo
+    ullamcorper a lacus vestibulum. Luctus accumsan tortor posuere ac ut.
+  </p>
+  <div class="organic-group">
+    <Organic />
+    <Organic />
+    <Organic />
+    <Organic />
+  </div>
+  <hr />
+  <ShopForm />
+</section>
+
+<style>
+  .info-card {
+    padding: 15px;
+    background-color: var(--bgInfo);
+  }
+
+  p {
+    margin: 20px 0px 20px 0px;
+  }
+
+  .organic-group {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.5em;
+    row-gap: 2em;
+    margin: 20px 0px 20px 0px;
+  }
+
+  /* media querys */
+  @media (min-width: 500px) {
+    .info-card {
+      padding: 30px;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    .info-card {
+      padding: 60px;
+    }
+  }
+</style>
